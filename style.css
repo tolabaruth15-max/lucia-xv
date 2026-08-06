@@ -36,7 +36,7 @@ body{font-family:"Cormorant Garamond",Georgia,serif;color:white}
 .door-scene.open .center-light{opacity:0;transition:opacity .5s}
 .door-scene.open .ice-btn{opacity:0;pointer-events:none}
 
-.logo-scene{background:radial-gradient(circle at 50% 35%,rgba(18,78,116,.55),transparent 48%),url("assets/scene1.png") center/cover no-repeat;flex-direction:column}
+.logo-scene{background:radial-gradient(circle at 50% 35%,rgba(18,78,116,.55),transparent 48%),url("scene1.png") center/cover no-repeat;flex-direction:column}
 .logo{width:min(78vw,520px);max-height:58vh;object-fit:contain;filter:drop-shadow(0 0 20px rgba(92,207,255,.52))}
 .reveal{animation:logoReveal 1.5s ease both}
 @keyframes logoReveal{0%{opacity:0;transform:scale(.84);filter:blur(10px)}100%{opacity:1;transform:scale(1);filter:blur(0) drop-shadow(0 0 20px rgba(92,207,255,.52))}}
