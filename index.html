@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>Lucía XV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <section class="scene active" id="s1">
+    <img class="page" src="assets/scene1.png" alt="">
+    <button class="ice-btn" data-next="s2">ACEPTO LA INVITACIÓN</button>
+  </section>
+
+  <section class="scene" id="s2">
+    <img class="page" src="assets/scene2.png" alt="">
+    <button class="ice-btn" data-next="doors">DESCUBRIR</button>
+  </section>
+
+  <section class="scene door-scene" id="doors">
+    <div class="portal"></div>
+    <div class="door-frame">
+      <img class="door left" src="assets/door-left.jpg" alt="">
+      <img class="door right" src="assets/door-right.jpg" alt="">
+      <span class="center-light"></span>
+    </div>
+    <button class="ice-btn" id="openDoors">ABRIR LAS PUERTAS</button>
+  </section>
+
+  <section class="scene" id="message">
+    <img class="page focus-in" src="assets/message.png" alt="">
+    <button class="ice-btn" data-next="logo">TE ACOMPAÑO</button>
+  </section>
+
+  <section class="scene logo-scene" id="logo">
+    <img class="logo reveal" src="assets/logo.png" alt="Lucía 15 años">
+    <p class="count-copy">Ahora comienza la cuenta regresiva…</p>
+    <button class="ice-btn" data-next="when">VER CUENTA REGRESIVA</button>
+  </section>
+
+  <section class="scene" id="when">
+    <img class="page focus-in" src="assets/when.png" alt="">
+    <button class="hotspot countdown-hotspot" data-next="where" aria-label="Ir a dónde"></button>
+  </section>
+
+  <section class="scene" id="where">
+    <img class="page focus-in" src="assets/where.png" alt="">
+    <button class="hotspot map-hotspot" onclick="alert('Después conectamos el enlace real de Google Maps')"
+      aria-label="Abrir mapa"></button>
+  </section>
+
+  <div id="snow" aria-hidden="true"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
