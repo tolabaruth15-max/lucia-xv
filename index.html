@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<title>Lucía XV</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#031522">
+  <title>Lucía XV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main id="app">
   <section class="scene active" id="s1">
-    <img class="page" src="scene1.png" alt="">
+    <img class="page moving-bg focus-in" src="scene1.png" alt="A veces las mejores historias comienzan con una simple invitación">
     <button class="ice-btn" data-next="s2">ACEPTO LA INVITACIÓN</button>
   </section>
 
   <section class="scene" id="s2">
-    <img class="page" src="scene2.png" alt="">
+    <img class="page moving-bg focus-in" src="scene2.png" alt="Deseo que seas parte de esta noche inolvidable">
     <button class="ice-btn" data-next="doors">DESCUBRIR</button>
   </section>
 
@@ -29,7 +30,7 @@
   </section>
 
   <section class="scene" id="message">
-    <img class="page focus-in" src="message.png" alt="">
+    <img class="page focus-in" src="message.png" alt="Mensaje de Lucía">
     <button class="ice-btn" data-next="logo">TE ACOMPAÑO</button>
   </section>
 
@@ -40,14 +41,13 @@
   </section>
 
   <section class="scene" id="when">
-    <img class="page focus-in" src="when.png" alt="">
-    <button class="hotspot countdown-hotspot" data-next="where" aria-label="Ir a dónde"></button>
+    <img class="page focus-in" src="when.png" alt="Cuándo">
+    <button class="hotspot countdown-hotspot" data-next="where" aria-label="Continuar a dónde"></button>
   </section>
 
   <section class="scene" id="where">
-    <img class="page focus-in" src="where.png" alt="">
-    <button class="hotspot map-hotspot" onclick="alert('Después conectamos el enlace real de Google Maps')"
-      aria-label="Abrir mapa"></button>
+    <img class="page focus-in" src="where.png" alt="Dónde">
+    <button class="hotspot map-hotspot" id="mapButton" aria-label="Abrir mapa"></button>
   </section>
 
   <div id="snow" aria-hidden="true"></div>
